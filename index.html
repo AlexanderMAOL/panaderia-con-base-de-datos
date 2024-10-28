@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Panadería La Desesperanza</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Panadería La Desesperanza</h1>
+    </header>
+    <section id="Galleria">
+        <table class="Galleria" width =100%><tr><td> <b><h3><center>Productos</center></h3></b></td></tr></table>
+
+        <table class="Galleria" width="100%">
+            <tr class="des">
+                <td class="des">
+                   
+                </td>
+                <td>Pan de muerto</td>
+                <td>Pan dulce</td>
+                <td>pan blanco</td>
+            </tr>
+            <tr>
+                <td></td>
+                <td><img src="img/panmuerto.jpeg" alt=""></td>
+                <td><img src="img/pandulce.jpeg" alt=""></td>
+                <td><img src="img/panblanco.jpeg" alt=""></td>
+            </tr>
+        </table>
+
+
+    </section>
+
+    <section id="Gallerias">
+        <table width="100%" class="Galleria">
+            <tr>
+                <td><b></b></td>
+                <td><h3>Pan de muerto</h3></td>
+                <td><h3>Pan dulce</h3></td>
+                <td><h3>Pan blanco</h3></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>Un pan tradicional mexicano, suave y esponjoso, adornado con un glaseado dulce y espolvoreado con azúcar. 
+                    Este pan se elabora especialmente para la celebración del Día de Muertos, simbolizando el ciclo de la vida y la muerte. 
+                    Su sabor ligero y aromático, con un toque de anís, lo convierte en una delicia irresistible.</td>
+                <td> Una variedad de panes que incluye diferentes formas y sabores, como conchas, orejas y besos. 
+                    Estos panes son tiernos y ligeramente dulces, perfectos para acompañar el café o chocolate caliente. 
+                    Cada pieza está decorada de manera colorida, lo que los hace visualmente atractivos y populares en desayunos y meriendas.</td>
+                <td>Un pan básico, suave y ligero, ideal para cualquier ocasión. Su miga es esponjosa y su corteza dorada, lo que lo hace perfecto para sandwiches,
+                     tostadas o simplemente acompañado de mantequilla. Es un alimento versátil que se disfruta en todo momento, desde el desayuno hasta la cena.
+                </td>
+            </tr>
+        </table>
+    </section>
+
+    <section id="producto"><h2> <center>Nuestros Panes</center></h2></section>
+
+
+    <section id="productos"> 
+       
+        <div class="producto">
+            <h3>Pan de Muerto</h3>
+            <p>Precio: $20</p>
+            <label for="cantidad-pan-muerto">Cantidad:</label>
+            <input type="number" id="cantidad-pan-muerto" min="1" max="50" value="1"><br>
+            <button onclick="comprar(1, 'cantidad-pan-muerto')">Comprar</button>
+            <p>Stock disponible: <span id="stock-pan-muerto">50</span></p>
+        </div>
+
+        <div class="producto">
+            <h3>Pan blanco</h3>
+            <p>Precio: $30</p>
+            <label for="cantidad-pan-blanco">Cantidad:</label>
+            <input type="number" id="cantidad-pan-blanco" min="1" max="100" value="1">
+            <button onclick="comprar(5, 'cantidad-pan-blanco')">Comprar</button>
+            <p>Stock disponible: <span id="stock-pan-blanco">100</span></p>
+        </div>
+</section>
+    <section id="productos">
+        
+        
+       
+
+        <div class="producto">
+            <h3>Concha</h3>
+            <p>Precio: $15</p>
+            <label for="cantidad-concha">Cantidad:</label>
+            <input type="number" id="cantidad-concha" min="1" max="100" value="1">
+            <button onclick="comprar(2, 'cantidad-concha')">Comprar</button>
+            <p>Stock disponible: <span id="stock-concha">100</span></p>
+        </div>
+
+        <div class="producto">
+            <h3>Dona</h3>
+            <p>Precio: $15</p>
+            <label for="cantidad-dona">Cantidad:</label>
+            <input type="number" id="cantidad-dona" min="1" max="100" value="1">
+            <button onclick="comprar(3, 'cantidad-dona')">Comprar</button>
+            <p>Stock disponible: <span id="stock-dona">100</span></p>
+        </div>
+
+        <div class="producto">
+            <h3>Polvoron</h3>
+            <p>Precio: $15</p>
+            <label for="cantidad-polvoron">Cantidad:</label>
+            <input type="number" id="cantidad-polvoron" min="1" max="100" value="1">
+            <button onclick="comprar(4, 'cantidad-polvoron')">Comprar</button>
+            <p>Stock disponible: <span id="stock-polvoron">100</span></p>
+        </div>
+
+
+    </section>
+
+    <section id="registro-compras">
+        <h2>Registro de Compras</h2>
+        <table id="tabla-registro" width="100%">
+            <thead>
+                <tr>
+                    <th>Producto</th>
+                    <th>Cantidad</th>
+                    <th>Precio Unitario</th>
+                    <th>Total</th>
+                </tr>
+            </thead>
+            <tbody>
+               
+            </tbody>
+        </table>
+        <h3>Total General: $<span id="total-general">0</span></h3>
+    </section>
+
+    <script src="app.js"></script>
+</body>
+</html>
+
+
+<!--Crear base de datos
+    comandos en terminal:
+    node app.js
+    node server.js
+    ejecutar-->
